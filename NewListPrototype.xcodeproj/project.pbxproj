@@ -41,10 +41,10 @@
 		3AC148E7249E1AA900B37B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AC148EC249E1AA900B37B3C /* NewListPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewListPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC148F2249E1AA900B37B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AC148FD249E1F0D00B37B3C /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
 		3AC148FF249E21DD00B37B3C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		3AC14901249E21E800B37B3C /* FirstScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModel.swift; sourceTree = "<group>"; };
 		3AC14909249E43F200B37B3C /* FirstScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModelTests.swift; sourceTree = "<group>"; };
+		3AC1490C249E90B200B37B3C /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +70,10 @@
 		3AC148CD249E1AA700B37B3C = {
 			isa = PBXGroup;
 			children = (
+				3AC1490C249E90B200B37B3C /* Networking */,
 				3AC148D8249E1AA700B37B3C /* NewListPrototype */,
 				3AC148EF249E1AA900B37B3C /* NewListPrototypeTests */,
 				3AC148D7249E1AA700B37B3C /* Products */,
-				3AC148FD249E1F0D00B37B3C /* Networking */,
 			);
 			sourceTree = "<group>";
 		};
