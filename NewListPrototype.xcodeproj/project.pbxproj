@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,11 @@
 		3AC148E0249E1AA900B37B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC148DF249E1AA900B37B3C /* Assets.xcassets */; };
 		3AC148E3249E1AA900B37B3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC148E2249E1AA900B37B3C /* Preview Assets.xcassets */; };
 		3AC148E6249E1AA900B37B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC148E4249E1AA900B37B3C /* LaunchScreen.storyboard */; };
-		3AC148F1249E1AA900B37B3C /* NewListPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC148F0249E1AA900B37B3C /* NewListPrototypeTests.swift */; };
+		3AC14900249E21DD00B37B3C /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC148FF249E21DD00B37B3C /* FirstScreen.swift */; };
+		3AC14902249E21E800B37B3C /* FirstScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC14901249E21E800B37B3C /* FirstScreenViewModel.swift */; };
+		3AC14905249E428700B37B3C /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 3AC14904249E428700B37B3C /* Nimble */; };
+		3AC14908249E42C800B37B3C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 3AC14907249E42C800B37B3C /* Quick */; };
+		3AC1490A249E43F200B37B3C /* FirstScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC14909249E43F200B37B3C /* FirstScreenViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,11 @@
 		3AC148E5249E1AA900B37B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC148E7249E1AA900B37B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AC148EC249E1AA900B37B3C /* NewListPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewListPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AC148F0249E1AA900B37B3C /* NewListPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListPrototypeTests.swift; sourceTree = "<group>"; };
 		3AC148F2249E1AA900B37B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC148FD249E1F0D00B37B3C /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
+		3AC148FF249E21DD00B37B3C /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		3AC14901249E21E800B37B3C /* FirstScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModel.swift; sourceTree = "<group>"; };
+		3AC14909249E43F200B37B3C /* FirstScreenViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC14908249E42C800B37B3C /* Quick in Frameworks */,
+				3AC14905249E428700B37B3C /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,7 @@
 				3AC148D8249E1AA700B37B3C /* NewListPrototype */,
 				3AC148EF249E1AA900B37B3C /* NewListPrototypeTests */,
 				3AC148D7249E1AA700B37B3C /* Products */,
+				3AC148FD249E1F0D00B37B3C /* Networking */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +89,7 @@
 		3AC148D8249E1AA700B37B3C /* NewListPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				3AC148FE249E21CB00B37B3C /* FirstScreen */,
 				3AC148D9249E1AA700B37B3C /* AppDelegate.swift */,
 				3AC148DB249E1AA700B37B3C /* SceneDelegate.swift */,
 				3AC148DD249E1AA700B37B3C /* ContentView.swift */,
@@ -101,10 +112,19 @@
 		3AC148EF249E1AA900B37B3C /* NewListPrototypeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3AC148F0249E1AA900B37B3C /* NewListPrototypeTests.swift */,
 				3AC148F2249E1AA900B37B3C /* Info.plist */,
+				3AC14909249E43F200B37B3C /* FirstScreenViewModelTests.swift */,
 			);
 			path = NewListPrototypeTests;
+			sourceTree = "<group>";
+		};
+		3AC148FE249E21CB00B37B3C /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3AC148FF249E21DD00B37B3C /* FirstScreen.swift */,
+				3AC14901249E21E800B37B3C /* FirstScreenViewModel.swift */,
+			);
+			path = FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +161,10 @@
 				3AC148EE249E1AA900B37B3C /* PBXTargetDependency */,
 			);
 			name = NewListPrototypeTests;
+			packageProductDependencies = (
+				3AC14904249E428700B37B3C /* Nimble */,
+				3AC14907249E42C800B37B3C /* Quick */,
+			);
 			productName = NewListPrototypeTests;
 			productReference = 3AC148EC249E1AA900B37B3C /* NewListPrototypeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -173,6 +197,10 @@
 				Base,
 			);
 			mainGroup = 3AC148CD249E1AA700B37B3C;
+			packageReferences = (
+				3AC14903249E428700B37B3C /* XCRemoteSwiftPackageReference "Nimble" */,
+				3AC14906249E42C800B37B3C /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 3AC148D7249E1AA700B37B3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -208,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC14900249E21DD00B37B3C /* FirstScreen.swift in Sources */,
 				3AC148DA249E1AA700B37B3C /* AppDelegate.swift in Sources */,
 				3AC148DC249E1AA700B37B3C /* SceneDelegate.swift in Sources */,
+				3AC14902249E21E800B37B3C /* FirstScreenViewModel.swift in Sources */,
 				3AC148DE249E1AA700B37B3C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC148F1249E1AA900B37B3C /* NewListPrototypeTests.swift in Sources */,
+				3AC1490A249E43F200B37B3C /* FirstScreenViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +397,7 @@
 				DEVELOPMENT_TEAM = 439F5NHE7E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewListPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +418,7 @@
 				DEVELOPMENT_TEAM = 439F5NHE7E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewListPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +505,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AC14903249E428700B37B3C /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		3AC14906249E42C800B37B3C /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AC14904249E428700B37B3C /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AC14903249E428700B37B3C /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		3AC14907249E42C800B37B3C /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AC14906249E42C800B37B3C /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AC148CE249E1AA700B37B3C /* Project object */;
 }
